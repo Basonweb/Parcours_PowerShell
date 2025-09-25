@@ -1,0 +1,280 @@
+= PowerShell Ateliers TSSR
+Cours PowerShell
+Butch
+:doctype: article
+:encoding: utf-8
+:lang: en
+:toc: left
+:numbered:
+
+Préambule : 
+Ces exercices sont tous réalisables avec le contenu du cours et l'aide intégrée de PowerShell, rien d'autre n'est nécessaire hormis votre cerveau. +
+Pour chaque exercice la réponse seule ne suffit pas ! Merci d'indiquer également comment et ou vous avez trouvez la réponse.
+
+Ces exercices peuvent tous être complété avec l'IA et cela n'a aucun intérêt, si c'est l'option que vous voulez prendre ne perdez pas notre temps et occupez vous a autre chose, sans gêner ceux qui souhaitent travailler. +
+Merci a ceux qui feront l'effort de s'en passer pour cette semaine. +
+La documentation officielle Microsoft, et certains blogs comme IT-Connect, Scripting-Guy, docteur scripto, powershellexplained, sont tolérés. +
+
+== connaitre sa version
+Comment connaitre la version actuelle du CLI PowerShell ? +
+Quelle est la version de PowerShell a votre disposition ? +
+Quelle est la version de PowerShell Core a votre disposition ? +
+
+== Construction
+Qu'est ce qui compose une cmdlet ? +
+
+== Mise a jour des fichiers d’aide
+Quelle est la cmdlet qui permet la mise a jour de l'aide de PowerShell ? +
+Quels sont les paramètres que vous connaissez pour cette cmdlet ? +
+Comment faire pour mettre a jour une VM avec le dépôt sur distrib ? +
+
+== Trouver une cmdlet
+Quelle cmdlet permet de trouver une cmdlet quand je ne la connais pas ? +
+Quelle commande allez vous exécuter pour trouver comment afficher la liste des disques connectés au système ? +
+
+== Trouver de l’aide sur une cmdlet
+Quelle cmdlet vous permet de consulter la page d'aide d'une cmdlet ? +
+Quelle commande vous permettrai de consulter la page d'aide de la cmdlet 'Get-Service', dans son intégralité ? +
+Quelle cmdlet vous permet d'afficher l'aide de la cmdlet 'Get-Service', dans une autre fenêtre ? +
+Quelle cmdlet vous permet de rechercher l'expression "status" dans l'aide de la cmdlet 'Get-Service' ? +
+Quelle cmdlet vous permet d'afficher l'aide sur le site officiel de Microsoft de la cmdlet 'Get-Service' ? +
+
+== Trouver de l’aide sur un concept de fonctionnement
+Quelle cmdlet vous permettrai de consulter les informations relatives aux opérateurs de comparaison disponible avec PowerShell ? +
+Comment pourriez vous obtenir des informations sur l'utilisation des variables avec PowerShell ? +
+
+== Les stratégies d’exécution
+Comment pouvez vous obtenir l'etat actuel de configuration de la stratégie relative au lancement des scripts PowerShell ? +
+Si vous lancez un CLI PowerShell sur une machine en Windows 11 quelle est la configuration par défaut de celui ci en ce qui concerne la stratégie relative au lancement des scripts ? +
+
+== Fondamentaux
+Quelle cmdlet vous permet de changer votre position dans l'arborescence ? +
+Quelle cmdlet vous permet de vous positionner dans c:\windows\ ? + 
+Quelle cmdlet vous permet de vous positionner dans 'c:\windows' si vous vous  trouvez dans 'c:\windows\system32\sysprep\' sans indiquer le chemin de son intégralité ? +
+Quel est en PowerShell le caractère qui protege de l'interprétation le caractère suivant ? +
+Avec la cmdlet appropriée afficher le texte suivant : +
+"La valeur de la variable <NomDeLaVariableProfil> est <ValeurDeLaVariableProfil>" +
+A quoi sert la variable PATH ? +
+Quelle est la différence entre une commande interne et une commande externe ? +
+Quels sont les 3 flux a connaitre lorsque l'on utilise des commandes sur un systeme ? +
+
+== Langage Objet
+Quelle est la cmdlet qui me permet de connaitre les informations relatives a un objet ? +
+Quels sont les caractéristiques d'un objet PowerShell ? +
+
+== Notions de bases sur les variables
+Comment identifie t'on une variable en PowerShell ? +
+Comment déclare t'on une variable en PowerShell ? +
+Y'a t'il une différence entre : +
+Get-Service | Select-Object Name +
+et +
+Get-Service | Select-Object -ExpandProperty Name +
+et +
+(Get-Service).Name +
+? +
+Comment afficher la première entrée d'une variable tableau ? +
+
+== Afficher un message
+Quelle cmdlet permet d'afficher a l'écran une chaine de caractère ? +
+
+== Demander une saisie utilisateur
+Quelle cmdlet permet de demander une saisie utilisateur ? +
+
+== Filtrage
+Quelle cmdlet permet d'imposer une condition a un traitement ? +
+Quelles sont les deux syntaxe possible pour cette cmdlet ? +
+
+== Les formats
+Quelle cmdlet permet d'afficher un résultat en 5 colonnes ? +
+Quel inconvénient a l'utilisation des cmdlet qui modifie le format d'affichage ? +
+
+== Le tri
+Quelle cmdlet permet de trier un résultat ? +
+
+== Compter
+Quelle cmdlet permet de compter la moyenne ? +
+
+== Horodatage
+Quelle cmdlet permet d'afficher la date ? +
+Quel paramètre de cette cmdlet me permet d'afficher la date en format UNIX ? +
+
+== log et historique de commande
+Quelle cmdlet permet de stocker dans un fichier tout ce qui se passe durant l'execution d'un script ainsi que d'avoir l'information sur le jour et l'heure de lancement du script ? +
+
+== Les cmdlet Active Directory
+Comment lister l'ensemble des cmdlets AD ? +
+Quelle est la cmdlet qui permet de lister les utilisateurs Active Directory ? +
+Comment puis je trouver des informations sur les paramètres filter, property, properties des cmdlets AD ? +
+Quelle est la particularité des cmdlets liées a Active Directory ? +
+
+== la construction d’un script
+Quels sont les symboles a connaitre pour faire un algo en mode organigramme ? +
+Comment faire un commentaire pour une ligne ? +
+
+== Structures (les differentes boucles) 
+[NOTE]
+=====
+!!! vous devez être en capacité d'expliquer tout ce qui se trouve dans vos scripts !!!
+=====
+
+Quels sont les différentes structures disponible sous PowerShell ? +
+
+- **Objectif** : Appréhender l'aide intégré +
+- **Instruction** :
+Faites un script, qui permet l'utilisation du get-help sur le script. +
+il affichera la version de powershell +
+il affichera : +
+"<DD/MM hh:mm> Bonjour <UserName>  +
+Vous etes connecté sur la machine <MachineName>" +
+
+** Ce script sera présent au début de chaque autres scripts. ** +
+
+=== if
+
+== Atelier
+- **Objectif** : Appréhender la structure IF +
+- **Instruction** :
+En utilisant la structure IF, faites un script qui : +
+demande a l'utilisateur d'entrer un chiffre [0-9] +
+affiche le chiffre puis si le chiffre est pair ou impair. +
+
+- **Bonus** : Trouver trois tests différents qui déterminent si le chiffre est pair ou impair. +
+
+== Atelier
+- **Objectif** : Appréhender la structure IF +
+- **Instruction** : 
+En utilisant la structure IF, faites un script qui : +
+Créez un script qui vérifie si l'utilisateur connecté est administrateur local, si c'est le cas il affichera "Un grand pouvoir implique de grandes responsabilités" +
+Sinon il saluera l'utilisateur connecté en utilisant son nom. +
+
+== Atelier
+- **Objectif** : Appréhender la structure IF +
+- **Instruction** : 
+En utilisant la structure IF, faites un script qui : +
+Créez un script qui vérifie si l'utilisateur connecté possède un fichier de profile PowerShell. +
+Si il n'existe pas le script proposera de le créer. +
+
+- **Bonus** : le script injectera dans le profil une modification du prompt pour convenir à vos besoins.
+
+== Atelier
+- **Objectif** : Appréhender la structure IF +
+- **Instruction** : 
+En utilisant la structure IF, faites un script qui : +
+Créez un script qui vérifie si l'utilisateur connecté possède une adresse APIPA. +
+Si oui il affichera un warning indiquant que c'est une adresse APIPA. +
+Si non il affichera : +
+Windows IP Configuration +
+ +
+   Host Name . . . . . . . . . . . . :  +
+   DNS Suffix Search List. . . . . . :  +
+
+Ethernet adapter EthernetX: +
+ +
+   Description . . . . . . . . . . . :  +
+   Physical Address. . . . . . . . . :  +
+   DHCP Enabled. . . . . . . . . . . :  +
+   IPv4 Address. . . . . . . . . . . :  +
+   Subnet Mask . . . . . . . . . . . :  +
+   Default Gateway . . . . . . . . . :  +
+   DNS Servers . . . . . . . . . . . :  +
+
+=== Switch
+
+== Atelier
+- **Objectif** : Appréhender la structure SWITCH +
+- **Instruction** : + 
+En utilisant la structure SWITCH faites un script qui : +
+Affiche le menu suivant : +
+	1. Afficher la liste des Services  +
+	2. Afficher la liste des Processus +
+	3. Quitter +
+Si le choix est "1", le script affichera les services démarrés puis les services arrêtés. +
+Si le choix est "2", le script affichera la liste des processus. +
+Si le choix est "3", le script affichera "Au revoir" en jaune. +
+Si la saisie est autre chose alors il affichera "Saisie incorrecte" en rouge. +
+
+- **Bonus** : faites en sortes que l'utilisateur puisse, saisir services ou 1 et processus ou 2 et quitter ou 3, les mots ne seront pas sensible a la casse.
+
+== Atelier
+- **Objectif** : Appréhender la structure SWITCH +
+- **Instruction** :
+En utilisant la structure switch faites un script qui : +
+Créez un script PowerShell qui affichera les messages suivant en fonction du jour. +
+Lundi : "Début de semaine, courage !" +
+Mardi : "On a parlé de quoi hier ? " +
+Mercredi : "Milieu de semaine, on tient bon !" +
+Jeudi : "Plus que deux jours avant le week-end." +
+Vendredi : "EPCF ? C'est bientôt le week-end !" +
+Sinon : "C'est le week-end !" +
+Dans un premier temps le jour sera stocké en dur dans la script. +
+
+- **Bonus** : Le script s'adaptera automatiquement selon le jour actuel. +
+
+=== Wwhile / DO While / Do Until
+
+== Atelier
+En utilisant la structure WHILE : +
+- **Objectif** : Appréhender la structure WHILE +
+- **Instruction** :
+Faites un script qui effectue un décompte de 10 a 0.+
+
+- **Bonus** : faites en sorte que tout ne s'affiche pas d'un seul coup, mais que le script prenne son temps. +
+
+== Atelier
+En utilisant la structure WHILE : +
+- **Objectif** : Appréhender la structure WHILE +
+- **Instruction** :
+Faites en sortes que l'exercice sur le switch ou on affiche un menu ne s'arrête jamais hormis si l'utilisateur fait le choix de quitter. +
+
+== Atelier
+- **Objectif** : Appréhender la structure WHILE+
+- **Instruction** : +
+Faites un script qui : +
+Initialise un compteur de tours. + 
+Affiche "C'est le tour numero <Nombre>" +
+puis il demande a l'utilisateur : "voulez vous continuer ? (O/N)" +
+Tant que l'utilisateur ne choisira pas non, le script boucle. +
+Ensuite il affichera "La première boucle est terminée après <Nombre> tours." +
+Puis affichera "Maintenant, commençons le décompte !" +
+Et le script affichera ligne par ligne le décompte jusqu'a 0. +
+Il affichera "Le decompte est terminé !" +
+
+=== Foreach
+
+== Atelier
+En utilisant la structure FOREACH : +
+- **Objectif** : Appréhender la structure FOREACH +
+- **Instruction** : +
+Faites un script qui pour chacun des répertoires suivants : +
+c:\scripts\ +
+<profilutilisateur>\documents\ +
+<profilutilisateur>\bureau\ +
+c:\temp\ +
+listera les fichiers de script powershell présent. +
+
+- **Bonus** :
+
+========== DD/MM/YYYY hh:mm ========== +
+Nombre de fichiers trouvés :  +
+Nombre de fichiers présent dans c:\scripts\  :  +
+Nombre de fichiers présent dans <profilutilisateur>\documents\  :  +
+Nombre de fichiers présent dans <profilutilisateur>\bureau\  :  +
+Nombre de fichiers présent dans c:\temp\  :  +
+========== <NomDeLaMachine> ========== +
+LOG Disponible ici : <ChemineEtFichierDeLog> +
+
+===	For
+
+== Atelier
+En utilisant la structure FOR : +
+- **Objectif** : Appréhender la structure FOR +
+- **Instruction** : +
+Faites un script qui demande a l'utilisateur de saisir un chiffre. +
+Qui affiche la table de multiplication de ce chiffre. +
+Il finira en affichant "Fin de la table de multiplication". +
+ 
+
+
+
+
+

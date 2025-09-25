@@ -1,0 +1,40 @@
+= PowerShell Ateliers TSSR
+Cours PowerShell
+Butch
+:doctype: article
+:encoding: utf-8
+:lang: en
+:toc: left
+:numbered:
+
+Préambule : 
+Ces exercices sont tous réalisables avec le contenu du cours et l'aide intégrée de PowerShell, rien d'autre n'est nécessaire hormis votre cerveau. +
+Pour chaque exercice la réponse seule ne suffit pas ! Merci d'indiquer également comment et ou vous avez trouvez la réponse.
+
+Ces exercices peuvent tous être complété avec l'IA et cela n'a aucun intérêt, si c'est l'option que vous voulez prendre ne perdez pas notre temps et occupez vous a autre chose, sans gener ceux qui souhaitent travailler. +
+Merci a ceux qui feront l'effort de s'en passer pour cette semaine. +
+La documentation officielle Microsoft, et certains blogs comme IT-Connect, Scripting-Guy, docteur scripto, powershellexplained, sont tolérés. +
+
+== Atelier AD
+- **Objectif** : Un Outil de gestion quotidien Active Directory ? +
+- **Instruction** : +
+Réfléchissez et listez les besoins relatifs a la mise en place et la gestion d'Active Directory.  +
+Apres avoir fait une **analyse** de la pertinence de ces besoins, creez un **organigrame** fonctionnel pour ce script et l'ensemble de ses fonctionnalités. En gardant a l'esprit d'essayer d'abord de faire simple mais fonctionnel, de prendre en compte la composante temps alloué à l'exercice, également le fait de pouvoir travailler en équipe et en essayant d'entrevoir les améliorations possible; adaptabilité, utilité ... pour un second temps. Ce travail de brainstorming peut être fait en groupe. +
+Les livrables à la suite de cette réflexion devront être fournit : +
+- liste des fonctionnalités. 
+- Ebauche de l'organigramme.
+- Proposition de planification pour un POC en fonction du groupe.
+
+Dans un premier temps, on portera notre attention sur, un script permettant de gérer la création des différents groupes de "domaine local". +
+Puis des groupes globaux. +
+Puis un script permettant de gérer les unités d'organisation. +
+Réfléchissez et listez les besoins relatifs a la mise en place et la gestion d'Active Directory.  +
+Après avoir fait une **analyse** de la pertinence de ces besoins, creez un **organigrame** fonctionnel pour ce script et l'ensemble de ses fonctionnalités. En gardant a l'esprit d'essayer d'abord de faire simple mais fonctionnel, de prendre en compte la composante temps alloué a l'exercice, également le fait de pouvoir travailler en équipe et en essayant d'entrevoir les améliorations possible; adaptabilité, utilité ... pour un second temps. Ce travail de brainstorming peut etre fait en groupe. +
+Les livrables a la suite de cette reflexion devront etre fournit : +
+- liste des fonctionnalités. + 
+- Ebauche de l'organigrame. +
+- Proposition de plannification pour un POC en fonction du groupe. +
+
+Dans un premier temps, on portera notre attention sur, un script permettant de gérer la création des différents groupes de domaine local. +
+Puis des groupes globaux. +
+Puis un script permettant de gérer les unités d'organisation. +
